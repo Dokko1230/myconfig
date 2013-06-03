@@ -116,3 +116,6 @@ alias fstage='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.113.193'
 #dark and light config
 alias light='~/gnome-terminal-colors-solarized/set_light.sh'
 alias dark='~/gnome-terminal-colors-solarized/set_dark.sh'
+
+#set the git branch to show automatically in the console
+PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '

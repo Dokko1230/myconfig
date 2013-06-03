@@ -6,4 +6,12 @@
     ours = "!f() { git checkout --ours $@ && git add $@; }; f"
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 
-
+[diff]
+	algorithm = patience
+[color]
+	ui = auto
+[user]
+	name = Sean Dokko
+	email = dokko1230@gmail.com
+[core]
+	editor = vim
