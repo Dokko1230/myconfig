@@ -112,6 +112,8 @@ alias fdev='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.153'
 #farbank stage
 alias fstage='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.113.193'
 #farbank prod
+#kok.hammerquist.net
+alias kok='ssh -i ~/.ssh/hammerquist3_rsa developer@23.21.76.59'
 
 #dark and light config
 alias light='~/gnome-terminal-colors-solarized/set_light.sh'
