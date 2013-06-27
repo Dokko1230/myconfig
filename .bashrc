@@ -124,3 +124,7 @@ alias dark='~/gnome-terminal-colors-solarized/set_dark.sh'
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 defaults write com.apple.Finder AppleShowAllFiles TRUE
+source ~/.rvm/scripts/rvm
+export EDITOR='subl -w'
+export PATH=~/bin:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
