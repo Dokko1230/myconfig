@@ -120,4 +120,8 @@ alias light='~/gnome-terminal-colors-solarized/set_light.sh'
 alias dark='~/gnome-terminal-colors-solarized/set_dark.sh'
 
 #set the git branch to show automatically in the console
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+source ~/.rvm/scripts/rvm
+export EDITOR='subl -w'
+export PATH=~/bin:$PATH
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
