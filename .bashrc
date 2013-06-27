@@ -113,11 +113,14 @@ alias fdev='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.153'
 alias fstage='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.113.193'
 #farbank prod
 #kok.hammerquist.net
-alias kok='ssh -i ~/.ssh/hammerquist3_rsa developer@23.21.76.59'
+alias kok='ssh -i ~/.ssh/awshsdev.pem ec2-user@54.225.232.6'
 
+alias stanley='ssh -i ~/.ssh/hammerquist3_rsa ec2-user@23.21.50.185'
 #dark and light config
 alias light='~/gnome-terminal-colors-solarized/set_light.sh'
 alias dark='~/gnome-terminal-colors-solarized/set_dark.sh'
 
 #set the git branch to show automatically in the console
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+
+defaults write com.apple.Finder AppleShowAllFiles TRUE
