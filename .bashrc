@@ -112,6 +112,8 @@ alias fdev='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.153'
 #farbank stage
 alias fstage='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.113.193'
 #farbank prod
+alias fprod='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.150'
+
 #kok.hammerquist.net
 alias kok='ssh -i ~/.ssh/awshsdev.pem ec2-user@54.225.232.6'
 
