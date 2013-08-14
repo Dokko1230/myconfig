@@ -112,6 +112,7 @@ alias fdev='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.153'
 #farbank stage
 alias fstage='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.113.193'
 #farbank prod
+alias fprod='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.150'
 #kok.hammerquist.net
 alias kok='ssh -i ~/.ssh/awshsdev.pem ec2-user@54.225.232.6'
 
@@ -128,3 +129,8 @@ source ~/.rvm/scripts/rvm
 export EDITOR='subl -w'
 export PATH=~/bin:$PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+alias bashrc="vim ~/.bash_profile"
+export PATH="/usr/local/share/npm/bin:$PATH"

@@ -11,6 +11,7 @@
 	ci = commit
 	br = branch
 	staged = diff --cached
+    lol = --graph --online --decorate --all
 
 [diff]
 	algorithm = patience
