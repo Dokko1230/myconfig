@@ -108,7 +108,7 @@ fi
 
 #work aliases
 #farbank dev
-alias fdev='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.153'
+alias fdev='ssh -i ~/.ssh/hammerquist3_rsa sean@50.112.108.153'
 #farbank stage
 alias fstage='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.113.193'
 #farbank prod
