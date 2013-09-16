@@ -134,3 +134,5 @@ export PATH=~/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 alias bashrc="vim ~/.bash_profile"
 export PATH="/usr/local/share/npm/bin:$PATH"
+
+alias gitrd='git diff --diff-filter=D --name-only -z | xargs -0 git rm'
