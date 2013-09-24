@@ -136,3 +136,6 @@ alias bashrc="vim ~/.bash_profile"
 export PATH="/usr/local/share/npm/bin:$PATH"
 
 alias gitrd='git diff --diff-filter=D --name-only -z | xargs -0 git rm'
+
+alias chmod664='find . -type f -exec chmod 644 {} \;'
+alias chmod755='find . -type d -exec chmod 755 {} \;'
