@@ -5,13 +5,18 @@
     snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
     ours = "!f() { git checkout --ours $@ && git add $@; }; f"
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
-	graph = log --graph --oneline
-	st = status
-	co = checkout
-	ci = commit
-	br = branch
-	staged = diff --cached
+    graph = log --graph --oneline
+    st = status
+    co = checkout
+    ci = commit
+    br = branch
+    staged = diff --cached
     lol = --graph --online --decorate --all
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    filelog = log -u
+    fl = log -u
+    la = "!git config -l | grep alias | cut -c 7-"
 
 [diff]
 	algorithm = patience
@@ -19,7 +24,7 @@
 	ui = auto
 [user]
 	name = Sean Dokko
-	email = dokko1230@gmail.com
+	email = sean@hammerquist.net
 [core]
 	editor = vim
 [credential]

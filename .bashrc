@@ -1,6 +1,29 @@
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+SSH_ENV=$HOME/.ssh/environment
+   
+# start the ssh-agent
+function start_agent {
+    echo "Initializing new SSH agent..."
+    # spawn ssh-agent
+    /usr/bin/ssh-agent | sed 's/^echo/#echo/' > "${SSH_ENV}"
+    echo succeeded
+    chmod 600 "${SSH_ENV}"
+    . "${SSH_ENV}" > /dev/null
+    /usr/bin/ssh-add
+}
+   
+if [ -f "${SSH_ENV}" ]; then
+     . "${SSH_ENV}" > /dev/null
+     ps -ef | grep ${SSH_AGENT_PID} | grep ssh-agent$ > /dev/null || {
+        start_agent;
+    }
+else
+    start_agent;
+fi
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -120,6 +143,8 @@ alias stanley='ssh -i ~/.ssh/hammerquist3_rsa ec2-user@23.21.50.185'
 #dark and light config
 alias light='~/gnome-terminal-colors-solarized/set_light.sh'
 alias dark='~/gnome-terminal-colors-solarized/set_dark.sh'
+alias ham='ssh -i ~/.ssh/awshsdev.pem ec2-user@23.21.76.59'
+alias dham='ssh -i ~/.ssh/awshsdev.pem ec2-user@107.21.101.210'
 
 #set the git branch to show automatically in the console
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
