@@ -129,22 +129,9 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-#work aliases
-#farbank dev
-alias fdev='ssh -i ~/.ssh/hammerquist3_rsa sean@50.112.108.153'
-#farbank stage
-alias fstage='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.113.193'
-#farbank prod
-alias fprod='ssh -i ~/.ssh/hammerquist3_rsa hammerquist@50.112.108.150'
-#kok.hammerquist.net
-alias kok='ssh -i ~/.ssh/awshsdev.pem ec2-user@54.225.232.6'
-
-alias stanley='ssh -i ~/.ssh/hammerquist3_rsa ec2-user@23.21.50.185'
 #dark and light config
 alias light='~/gnome-terminal-colors-solarized/set_light.sh'
 alias dark='~/gnome-terminal-colors-solarized/set_dark.sh'
-alias ham='ssh -i ~/.ssh/awshsdev.pem ec2-user@23.21.76.59'
-alias dham='ssh -i ~/.ssh/awshsdev.pem ec2-user@107.21.101.210'
 
 #set the git branch to show automatically in the console
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
@@ -164,3 +151,6 @@ alias gitrd='git diff --diff-filter=D --name-only -z | xargs -0 git rm'
 
 alias chmod664='find . -type f -exec chmod 644 {} \;'
 alias chmod755='find . -type d -exec chmod 755 {} \;'
+
+### Analyze safari memory debugger
+alias debs='/Applications/Safari.app/Contents/MacOS/Safari'
