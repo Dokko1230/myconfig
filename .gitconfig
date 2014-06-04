@@ -14,6 +14,9 @@
     lol = --graph --online --decorate --all
     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	  type = cat-file -t
+	  dump = cat-file -p
     filelog = log -u
     fl = log -u
     la = "!git config -l | grep alias | cut -c 7-"
@@ -24,7 +27,7 @@
 	ui = auto
 [user]
 	name = Sean Dokko
-	email = sean@hammerquist.net
+	email = dokko1230@gmail.com
 [core]
 	editor = vim
 [credential]

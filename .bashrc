@@ -154,3 +154,5 @@ alias chmod755='find . -type d -exec chmod 755 {} \;'
 
 ### Analyze safari memory debugger
 alias debs='/Applications/Safari.app/Contents/MacOS/Safari'
+export CRAWLER_AUTH='4sMMNGVsvzGbQgTcuTnpOmD7ZUb3JSFsjelHrhaj';
+alias kiwicrawler='ssh -i ~/.ssh/privatekey.pem azureuser@kiwi-crawler.cloudapp.net'
