@@ -133,6 +133,8 @@ fi
 alias light='~/gnome-terminal-colors-solarized/set_light.sh'
 alias dark='~/gnome-terminal-colors-solarized/set_dark.sh'
 
+alias work='cd ~/workspace'
+
 #set the git branch to show automatically in the console
 #PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
@@ -156,3 +158,4 @@ alias chmod755='find . -type d -exec chmod 755 {} \;'
 alias debs='/Applications/Safari.app/Contents/MacOS/Safari'
 export CRAWLER_AUTH='4sMMNGVsvzGbQgTcuTnpOmD7ZUb3JSFsjelHrhaj';
 alias kiwicrawler='ssh -i ~/.ssh/privatekey.pem azureuser@kiwi-crawler.cloudapp.net'
+alias swift="/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.‌​xctoolchain/usr/bin/swift"
